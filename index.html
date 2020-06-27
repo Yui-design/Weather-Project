@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Sriracha&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>
+      Wheather Forcast
+    </h1>
+
+    <h2>date</h2>
+    <form id="search-form">
+      <input type="text" placeholder="Enter a city" class="btn btn-outline-secondary" id="input-city" />
+      <input type="submit" value="search" class="btn btn-outline-secondary" />
+      <button type="button" class="btn btn-outline-secondary" id="location-button">Location🔍</button>
+
+    </form>
+
+    <h3>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h4 class="card-subtitle mb-2 text-muted">TODAY</h4>
+          <h5 class="card-title" id="city"></h5>
+          <h6>
+    <ul>
+      <li>Humidity<span id="humidity">0</span>%</li>
+      <li>Wind<span id="wind">0</span></li>
+    
+    </ul>
+  
+  </h6>
+          <p class="card-text" id="current-temp"
+                      ></p>     
+          </p>
+          <a href="#" id="celsius" class="card-link">°C</a> |
+          <a href="#" id="farenheit" class="card-link">°F</a>
+        </div>
+      </div>
+    </h3>
+
+    <div class="container">
+      <div class="weatherApp">
+        <div class="row">
+          <div class="col">5/30</div>
+          <div class="col">Tomorrow</div>
+          <div class="col">🌞</div>
+          <div class="col">25C°/14C°</div>
+          <div class="col">Sky Blue</div>
+        </div>
+        <hr />
+
+        <div class="row">
+          <div class="col">5/31</div>
+          <div class="col">Sun</div>
+          <div class="col">☁️</div>
+          <div class="col">25C°/14C°</div>
+          <div class="col">Cloudy</div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">6/1</div>
+          <div class="col">Mon</div>
+          <div class="col">☁️</div>
+          <div class="col">25C°/14C°</div>
+          <div class="col">Cloudy</div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">6/2</div>
+          <div class="col">Tue</div>
+          <div class="col">☁🌞</div>
+          <div class="col">25C°/14C°</div>
+          <div class="col">Sunny and Cloudyy</div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">6/3</div>
+          <div class="col">Wed</div>
+          <div class="col">☁️</div>
+          <div class="col">25C°/14C°</div>
+          <div class="col">Cloudy</div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <h4>
+      More info...
+    </h4>
+    <button>
+      Here
+    </button>
+    <script src="src/index.js"></script>
+  </body>
+</html>
